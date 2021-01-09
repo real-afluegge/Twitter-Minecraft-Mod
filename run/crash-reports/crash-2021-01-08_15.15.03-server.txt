@@ -1,0 +1,73 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 1/8/21, 3:15 PM
+Description: Ticking memory connection
+
+twitter4j.TwitterException: 403:The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits (https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following).
+message - Status is a duplicate.
+code - 187
+
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:170) ~[twitter4j-core-4.0.7.jar:4.0.7] {}
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:57) ~[twitter4j-core-4.0.7.jar:4.0.7] {}
+	at twitter4j.HttpClientBase.post(HttpClientBase.java:86) ~[twitter4j-core-4.0.7.jar:4.0.7] {}
+	at twitter4j.TwitterImpl.post(TwitterImpl.java:2120) ~[twitter4j-core-4.0.7.jar:4.0.7] {}
+	at twitter4j.TwitterImpl.updateStatus(TwitterImpl.java:228) ~[twitter4j-core-4.0.7.jar:4.0.7] {}
+	at com.sqacey.tweetdeath.EventHandling.loginServer(EventHandling.java:57) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_2_EventHandling_loginServer_PlayerLoggedInEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.fml.hooks.BasicEventHooks.firePlayerLoggedIn(BasicEventHooks.java:44) ~[forge:?] {re:classloading}
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:232) ~[forge:?] {re:classloading}
+	at net.minecraft.network.login.ServerLoginNetHandler.tryAcceptPlayer(ServerLoginNetHandler.java:122) ~[forge:?] {re:classloading}
+	at net.minecraft.network.login.ServerLoginNetHandler.tick(ServerLoginNetHandler.java:66) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:244) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:151) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:898) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:820) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:84) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:663) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:832) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.4
+	Minecraft Version ID: 1.16.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 14.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 604018024 bytes (576 MB) / 1234173952 bytes (1177 MB) up to 4255121408 bytes (4058 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.0.6+85+master.325de55
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.5-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 35.1
+	Forge: net.minecraftforge:35.1.4
+	FML Language Providers: 
+		javafml@35.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.4              |DONE      |a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Tweet On Death                |tweetdeath                    |NONE                |DONE      |NOSIGNATURE
+		forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.|Forge                         |forge                         |35.1.4              |DONE      |NOSIGNATURE
+	Crash Report UUID: c8688116-fb29-4f79-ba34-8d4639c34cd2
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/172, l='ServerLevel[New World]', x=218.50, y=70.00, z=-229.50]]
+	Data Packs: vanilla, mod:forge
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

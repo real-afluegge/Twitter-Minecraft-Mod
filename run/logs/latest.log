@@ -1,0 +1,175 @@
+[08Jan2021 15:12:51.277] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20201102.104115, --fml.mcVersion, 1.16.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 35.1.4, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, C:\Users\addie\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[08Jan2021 15:12:51.282] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 14.0.2 by Oracle Corporation
+[08Jan2021 15:12:51.715] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[08Jan2021 15:12:51.809] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/addie/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[08Jan2021 15:12:53.718] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[08Jan2021 15:12:54.360] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\addie\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[08Jan2021 15:13:09.613] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[08Jan2021 15:13:10.526] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+com.mojang.authlib.exceptions.AuthenticationException: Unauthorized
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:119) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:94) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createSocialInteractionsService(YggdrasilAuthenticationService.java:152) ~[authlib-2.1.28.jar:?]
+	at net.minecraft.client.Minecraft.func_244735_a(Minecraft.java:556) ~[forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:388) ~[forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131) [idea_rt.jar:?]
+[08Jan2021 15:13:10.539] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[08Jan2021 15:13:11.161] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[08Jan2021 15:13:14.133] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 35.1.4, for MC 1.16.4 with MCP 20201102.104115
+[08Jan2021 15:13:14.348] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v35.1.4 Initialized
+[08Jan2021 15:13:16.466] [Render thread/WARN] [net.minecraft.resources.ResourcePackInfo/]: Couldn't get pack info for: net.minecraft.resources.ResourcePackFileNotFoundException: 'pack.mcmeta' in ResourcePack 'C:\Users\addie\Desktop\TweetDeath\build\resources\main'
+[08Jan2021 15:13:19.777] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[08Jan2021 15:13:20.102] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[08Jan2021 15:13:20.952] [Worker-Main-9/INFO] [com.sqacey.tweetdeath.TweetDeath/]: HELLO FROM PREINIT
+[08Jan2021 15:13:21.494] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tweetdeath] Starting version check at http://myurl.me/
+[08Jan2021 15:13:21.649] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.IOException: Server returned HTTP response code: 403 for URL: http://myurl.me/
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1982) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1977) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:554) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1976) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1544) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1528) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:171) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:139) [forge:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: http://myurl.me/
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1932) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1528) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:155) ~[forge:?]
+	... 3 more
+[08Jan2021 15:13:21.653] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[08Jan2021 15:13:22.270] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 35.1.4 Target: null
+[08Jan2021 15:13:22.583] [Worker-Main-11/INFO] [com.sqacey.tweetdeath.TweetDeath/]: Got game settings net.minecraft.client.GameSettings@2381d57e
+[08Jan2021 15:13:43.190] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[08Jan2021 15:13:43.201] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[08Jan2021 15:13:43.974] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[08Jan2021 15:13:44.166] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[08Jan2021 15:13:44.168] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[08Jan2021 15:13:44.175] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[08Jan2021 15:13:44.246] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[08Jan2021 15:13:44.249] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[08Jan2021 15:13:44.252] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[08Jan2021 15:13:47.205] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[08Jan2021 15:13:47.314] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[08Jan2021 15:13:47.399] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[08Jan2021 15:14:38.786] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[08Jan2021 15:14:50.073] [Render thread/WARN] [net.minecraft.resources.ResourcePackInfo/]: Couldn't get pack info for: net.minecraft.resources.ResourcePackFileNotFoundException: 'pack.mcmeta' in ResourcePack 'C:\Users\addie\Desktop\TweetDeath\build\resources\main'
+[08Jan2021 15:14:50.074] [Render thread/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:tweetdeath
+[08Jan2021 15:14:50.345] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08Jan2021 15:14:50.346] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08Jan2021 15:14:50.347] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08Jan2021 15:14:50.349] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08Jan2021 15:14:50.350] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08Jan2021 15:14:50.354] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.4-35.1.4_mapped_snapshot_20201028-1.16.3-recomp.jar
+[08Jan2021 15:14:51.821] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[08Jan2021 15:14:52.786] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[08Jan2021 15:14:53.007] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[08Jan2021 15:14:54.019] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[08Jan2021 15:14:54.054] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.4
+[08Jan2021 15:14:54.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[08Jan2021 15:14:54.347] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[08Jan2021 15:14:55.355] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08Jan2021 15:14:55.355] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08Jan2021 15:14:55.390] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08Jan2021 15:14:55.938] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1566 ms
+[08Jan2021 15:15:01.718] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[08Jan2021 15:15:01.725] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 5768ms or 115 ticks behind
+[08Jan2021 15:15:02.900] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[08Jan2021 15:15:03.000] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@1471e404
+[08Jan2021 15:15:03.031] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:c7ed1d0b] logged in with entity id 172 at (218.5, 70.0, -229.5)
+[08Jan2021 15:15:03.081] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08Jan2021 15:15:03.283] [Server thread/INFO] [STDOUT/]: [com.sqacey.tweetdeath.EventHandling:loginServer:52]: Dev has logged into minecraft.
+[08Jan2021 15:15:03.522] [Server thread/ERROR] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: Exception caught during firing event: 403:The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits (https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following).
+message - Status is a duplicate.
+code - 187
+
+	Index: 1
+	Listeners:
+		0: NORMAL
+		1: ASM: class com.sqacey.tweetdeath.EventHandling loginServer(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V
+		2: ASM: net.minecraftforge.common.ForgeInternalHandler@63c7c4d3 playerLogin(Lnet/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V
+403:The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits (https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following).
+message - Status is a duplicate.
+code - 187
+
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=2fc5b7cb or
+	http://www.google.co.jp/search?q=1051ec03
+TwitterException{exceptionCode=[2fc5b7cb-1051ec03], statusCode=403, message=Status is a duplicate., code=187, retryAfter=-1, rateLimitStatus=null, version=4.0.7}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:170)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:57)
+	at twitter4j.HttpClientBase.post(HttpClientBase.java:86)
+	at twitter4j.TwitterImpl.post(TwitterImpl.java:2120)
+	at twitter4j.TwitterImpl.updateStatus(TwitterImpl.java:228)
+	at com.sqacey.tweetdeath.EventHandling.loginServer(EventHandling.java:57)
+	at net.minecraftforge.eventbus.ASMEventHandler_2_EventHandling_loginServer_PlayerLoggedInEvent.invoke(.dynamic)
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297)
+	at net.minecraftforge.fml.hooks.BasicEventHooks.firePlayerLoggedIn(BasicEventHooks.java:44)
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:232)
+	at net.minecraft.network.login.ServerLoginNetHandler.tryAcceptPlayer(ServerLoginNetHandler.java:122)
+	at net.minecraft.network.login.ServerLoginNetHandler.tick(ServerLoginNetHandler.java:66)
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:244)
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:151)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:898)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:820)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:84)
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:663)
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[08Jan2021 15:15:03.533] [Server thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID c8688116-fb29-4f79-ba34-8d4639c34cd2
+[08Jan2021 15:15:03.533] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Encountered an unexpected exception
+net.minecraft.crash.ReportedException: Ticking memory connection
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:154) ~[forge:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:898) ~[forge:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:820) ~[forge:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:84) ~[forge:?]
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:663) ~[forge:?]
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233) ~[forge:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: twitter4j.TwitterException: 403:The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits (https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following).
+message - Status is a duplicate.
+code - 187
+
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:170) ~[twitter4j-core-4.0.7.jar:4.0.7]
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:57) ~[twitter4j-core-4.0.7.jar:4.0.7]
+	at twitter4j.HttpClientBase.post(HttpClientBase.java:86) ~[twitter4j-core-4.0.7.jar:4.0.7]
+	at twitter4j.TwitterImpl.post(TwitterImpl.java:2120) ~[twitter4j-core-4.0.7.jar:4.0.7]
+	at twitter4j.TwitterImpl.updateStatus(TwitterImpl.java:228) ~[twitter4j-core-4.0.7.jar:4.0.7]
+	at com.sqacey.tweetdeath.EventHandling.loginServer(EventHandling.java:57) ~[main/:?]
+	at net.minecraftforge.eventbus.ASMEventHandler_2_EventHandling_loginServer_PlayerLoggedInEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?]
+	at net.minecraftforge.fml.hooks.BasicEventHooks.firePlayerLoggedIn(BasicEventHooks.java:44) ~[forge:?]
+	at net.minecraft.server.management.PlayerList.initializeConnectionToPlayer(PlayerList.java:232) ~[forge:?]
+	at net.minecraft.network.login.ServerLoginNetHandler.tryAcceptPlayer(ServerLoginNetHandler.java:122) ~[forge:?]
+	at net.minecraft.network.login.ServerLoginNetHandler.tick(ServerLoginNetHandler.java:66) ~[forge:?]
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:244) ~[forge:?]
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:151) ~[forge:?]
+	... 6 more
