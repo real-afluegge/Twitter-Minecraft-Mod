@@ -1,1 +1,10 @@
-edit later
+# File Structure
+
+## TweetDeath.java
+The main file. Sets up the mod & connects to the other two files.
+
+## EventHandling.java
+The file that checks for the events & runs the code for when each one occurs.
+
+## TwitterConfigs.java
+Sets up the configurations for twitter4j. In this code the spaces have placeholders text -- in order to run the code you'll need to replace the placeholder text with the api keys from twitter.
