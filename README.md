@@ -1,6 +1,6 @@
 ## About the Project
 The purpose of this project was to create a simple minecraft mod which, when the user dies or joins the game, a notification is sent to twitter. A secondary feature of the mod is any chat message is also broadcasted to their twitter.
-This project uses (forge)[https://mcforge.readthedocs.io/en/1.16.x/gettingstarted/] and gradle.
+This project uses [forge](https://mcforge.readthedocs.io/en/1.16.x/gettingstarted/) and gradle.
 ## File Structure
 
 TweetDeath.java :
