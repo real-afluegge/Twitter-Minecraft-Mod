@@ -1,5 +1,5 @@
 ## About the Project ![made with java](https://img.shields.io/badge/made%20with-java-brightgreen)
-The purpose of this project was to create a simple minecraft mod which, when the user dies or joins the game, a notification is sent to twitter. A secondary feature of the mod is any chat message is also broadcasted to their twitter.
+The purpose of this project was to create a minecraft mod which, when the user dies or joins the game, a notification is sent to twitter. A secondary feature of the mod is any chat message is also broadcasted to their twitter.
 This project uses [forge](https://mcforge.readthedocs.io/en/1.16.x/gettingstarted/) and gradle.
 
 ## File Structure
